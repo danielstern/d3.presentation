@@ -81,3 +81,9 @@ Check this out.
 - D3 is a full-featured color scheme creation library
 - D3 is a data visualization library. It visualizes data by attaching properties of data to DOM elements. 
 - D3 is a charting library. It has powerful (and frighteningly obscure) `axis` and `scale` functions. It's also loaded with special transformer functions like `d3.pie()`, which makes it all the more a charting library.
+
+### Why is D3 so hard to learn???
+
+- D3 uses SVG, HTML, CSS and JavaScript altogether like they were one big thing. Some of these individual languages are hard enough to understand on their own. 
+- D3 is often taught as a *charting* library even though that is by far its most high-level function
+- Mike Bostock is smarter than you. After five years of intensive study, you will be nearing the point he was when he first began.
