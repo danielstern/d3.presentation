@@ -56,6 +56,14 @@ Check this out.
     "transform", "transition", "transpose", "tsv", "values", "xhr", "xml", "zip"]
 ```
 
+### Top 5 D3.js Utilites
+
+ 1. Nests
+ 2. Selections
+ 3. Scales
+ 4. Colors
+ 5. Transitions
+
 ### Resources
 - Documentation
   - https://github.com/mbostock/d3/wiki
