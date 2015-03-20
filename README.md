@@ -6,12 +6,36 @@
 
 - Introduction to D3
   - History
+  - Mike Bostock & the New York Times
+  - The web's biggest open source library
+
+- Using D3
+  - Selections and Data Joins
+  - Drawing a basic graph
+  - Smooth transitions
+  - Four markups: Combining SVG, HTML, CSS and JavaScript
   
 - Utilities
   - Sorting
+    - ascending
   - Nests
   - Scale
   - Range
+  - Transitions
+  - AJAX
+    - csv
+    - dsv
+    - json
+  - Colors
+    - hsl
+    - rgb
+    - lab
+    - crazy other things
+  - Reduction
+    - mean
+    - quantile
+    - min
+    - median
   
 - Resources
   - bl.ocks
