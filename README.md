@@ -56,6 +56,11 @@ Check this out.
     "transform", "transition", "transpose", "tsv", "values", "xhr", "xml", "zip"]
 ```
 
-Resources
-### Wiki Documentation
-https://github.com/mbostock/d3/wiki
+### Resources
+- Documentation
+  - https://github.com/mbostock/d3/wiki
+
+- Tutorials
+  - Data Joins 
+    - https://medium.com/@c_behrens/enter-update-exit-6cafc6014c36
+    - http://bost.ocks.org/mike/join/
