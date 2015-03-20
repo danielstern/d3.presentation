@@ -75,7 +75,7 @@ Check this out.
 
 ### What is D3?
 
-- D3 is a JavaScript object, plain and simple. It's full of functions that do different stuff.
+- D3 is a JavaScript object, plain and simple. It's full of functions that do different stuff. Go to http://bl.ocks.org/mbostock/4063550 and open the dev tools. Type `d3` and press enter. There you have it, `d3` itself.
 - D3 is a data manipulation library. 90% of the time, it will help you take a big array of stuff, and turn it into a different array of stuff
 - D3 is a DOM manipulation library. D3 manipulates the DOM using `selections` which are totally different from how other libraries treat the DOM
 - D3 is a full-featured color scheme creation library
