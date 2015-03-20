@@ -72,3 +72,12 @@ Check this out.
   - Data Joins 
     - https://medium.com/@c_behrens/enter-update-exit-6cafc6014c36
     - http://bost.ocks.org/mike/join/
+
+### What is D3?
+
+- D3 is a JavaScript object, plain and simple. It's full of functions that do different stuff.
+- D3 is a data manipulation library. 90% of the time, it will help you take a big array of stuff, and turn it into a different array of stuff
+- D3 is a DOM manipulation library. D3 manipulates the DOM using `selections` which are totally different from how other libraries treat the DOM
+- D3 is a full-featured color scheme creation library
+- D3 is a data visualization library. It visualizes data by attaching properties of data to DOM elements. 
+- D3 is a charting library. It has powerful (and frighteningly obscure) `axis` and `scale` functions. It's also loaded with special transformer functions like `d3.pie()`, which makes it all the more a charting library.
