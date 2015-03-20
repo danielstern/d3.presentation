@@ -17,5 +17,6 @@
   - bl.ocks
 
 Check this out.
+
     _.functions(d3)
     ["ascending", "bisect", "bisectLeft", "bisectRight", "bisector", "color", "csv", "descending", "dispatch", "dsv", "ease",        "entries", "extent", "format", "formatPrefix", "functor", "hcl", "hsl", "html", "interpolate", "interpolateArray",     "interpolateHcl", "interpolateHsl", "interpolateLab", "interpolateNumber", "interpolateObject", "interpolateRgb",  "interpolateRound", "interpolateString", "interpolateTransform", "interpolateZoom", "json", "keys", "lab", "locale", "map", "max", "mean", "median", "merge", "min", "mouse", "nest", "pairs", "permute", "quantile", "range", "rebind", "requote", "rgb", "round", "select", "selectAll", "selection", "set", "shuffle", "sum", "text", "timer", "tip", "touch", "touches", "transform", "transition", "transpose", "tsv", "values", "xhr", "xml", "zip"]
