@@ -152,6 +152,10 @@ var foods = ['milk duds','skim milk','buttermilk'];
 ```javascript
   var data = [19.8,49.6,188.5,222.9]
   
+  d3.min(data)
+  // the lowest value among the data
+  //19.8
+  
   d3.max(data)
   // the highest value among the data
   //222.9
