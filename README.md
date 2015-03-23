@@ -133,4 +133,14 @@ var foods = ['eggnog','fried chicken','figs','milk','egg whites'];
   var shortFoods = foods.filter(function(a){return a.length < 5});
   //['figs','milk'];
 ```
+### Every
+#### Metaphor +: Checking to see if each item on a grocery list is purchased.
 
+```javascript
+var foods = ['milk duds','skim milk','buttermilk'];
+  var everythingIsMilk = foods.every(function(a){return a.match('milk')});
+  // true
+  
+  var everythingIsButter = foods.every(function(a){return a.match('butter')});
+  //['false'];
+```
