@@ -142,5 +142,5 @@ var foods = ['milk duds','skim milk','buttermilk'];
   // true
   
   var everythingIsButter = foods.every(function(a){return a.match('butter')});
-  //['false'];
+  //false;
 ```
