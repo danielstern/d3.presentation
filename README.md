@@ -99,7 +99,8 @@ Check this out.
   - Many to boolean: Every
   - Many to boolean: Some
 
-### Map Example
+### Maps
+![image](https://cloud.githubusercontent.com/assets/4268152/6781796/a2d0cd20-d146-11e4-9bfc-ed9eb62d2535.png)
 *Creates a new array B from array A, where B has the same number of entries.*
 *Turns an array into a new array with the same length.*
 *'Maps stuff*
