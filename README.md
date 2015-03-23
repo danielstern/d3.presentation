@@ -5,9 +5,8 @@
 ### Contents
 
 - Introduction to D3
-  - History
-  - Mike Bostock & the New York Times
-  - The web's biggest open source library
+  - History, Mike Bostock & the New York Times
+  - The web's biggest open source library?
 
 - Using D3
   - Selections and Data Joins
@@ -175,6 +174,10 @@ var foods = ['milk duds','skim milk','buttermilk'];
   d3.deviation(data);
   // the standard deviation (for people smarter than me)
   //100.46010816903062
+  
+  d3.variance(data)
+  // what does this even do? no one knows.
+  //10092.233333333334
 
 
 ```
