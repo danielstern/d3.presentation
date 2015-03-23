@@ -202,5 +202,8 @@ var transformed = nest.entries(words);
 // [{"key":"z","values":["zim","zoo"]},{"key":"f","values":["fiz","foo"]},{"key":"b","values":["bar"]},{"key":"q","values":["qux"]}]
 
 
+##How about this one?
+
+`d3.select('body').selectAll('p').data(_.functions(d3)).enter().append('p').text(function(a){return a})`
 
 
