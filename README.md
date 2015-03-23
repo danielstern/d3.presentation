@@ -5,8 +5,14 @@
 ### Contents
 
 - Introduction to D3
-  - History, Mike Bostock & the New York Times
+  - The history of D3 (Mike Bostock & the New York Times)
   - The web's biggest open source library?
+  - What is D3?
+    - data manipulation
+    - color manipulation
+    - dom manipulation
+    - drawing visualizations
+    - drawing charts
 
 - Using D3
   - Selections and Data Joins
