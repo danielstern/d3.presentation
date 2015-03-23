@@ -144,3 +144,33 @@ var foods = ['milk duds','skim milk','buttermilk'];
   var everythingIsButter = foods.every(function(a){return a.match('butter')});
   //false;
 ```
+
+## Summarizing data
+***Summaries take a set (array) of data and turn into one datum (entry)***
+* similar to reduce *
+
+```javascript
+  var data = [19.8,49.6,188.5,222.9]
+  
+  d3.max(data)
+  // the highest value among the data
+  //222.9
+  
+  d3.mean(data)
+  // the mean value of the data
+  //120.19999999999999
+  
+  d3.median(data)
+  // the median value of the data
+  //119.05000000000001
+  
+  d3.extent(data)
+  // the maxium and minimum values
+  // [19.8, 222.9]
+  
+  d3.deviation(data);
+  // the standard deviation (for people smarter than me)
+  //100.46010816903062
+
+
+```
