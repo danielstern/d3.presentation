@@ -87,3 +87,33 @@ Check this out.
 - D3 uses SVG, HTML, CSS and JavaScript altogether like they were one big thing. Some of these individual languages are hard enough to understand on their own. 
 - D3 is often taught as a *charting* library even though that is by far its most high-level function
 - Mike Bostock is smarter than you. After five years of intensive study, you will be nearing the point he was when he first began.
+
+
+### Topics to Cover in a D3 Talk
+
+- Data Manipulation with JavaScript (no point in starting with D3 if you don't know the basics)
+  - Many to many: Map
+  - Many to few: Filter
+  - Many to *: Reduce
+  - Many to actions: forEach
+  - Many to boolean: Every
+  - Many to boolean: Some
+
+### Map Example
+*Creates a new array B from array A, where B has the same number of entries.*
+*Turns an array into a new array with the same length.*
+*'Maps stuff*
+
+Maps...
+- Always have the same number of entries as the original array
+- Invokes a function x times, where x is the length of the array
+- Doesn't modify the original array
+
+```javascript
+var fruits = ['Pear','Apple','Fig'];
+  var fruitLengths = fruits.map(function(a){return a.length});
+  //[4,5,3];
+
+  var fruitLetters = fruits.map(function(a){return a[0]});
+  //['P','A','F']
+```
