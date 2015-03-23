@@ -1,0 +1,20 @@
+{
+  "name": "d3pres",
+  "version": "0.0.0",
+  "homepage": "https://github.com/danielstern/d3.presentation",
+  "authors": [
+    "Daniel Stern <dstern@oicr.on.ca>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "d3": "~3.5.5",
+    "lodash": "~3.5.0"
+  }
+}
