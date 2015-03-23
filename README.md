@@ -99,9 +99,10 @@ Check this out.
   - Many to boolean: Every
   - Many to boolean: Some
 
-### Maps
+### Map
+#### Metaphor: Translating a grocery list into a different language.
 ![image](https://cloud.githubusercontent.com/assets/4268152/6781796/a2d0cd20-d146-11e4-9bfc-ed9eb62d2535.png)
-*Creates a new array B from array A, where B has the same number of entries.*
+*Creates a new array B from array A, where B has the same number of entries, which may not be the same*
 *Turns an array into a new array with the same length.*
 *'Maps stuff*
 
@@ -118,3 +119,18 @@ var fruits = ['Pear','Apple','Fig'];
   var fruitLetters = fruits.map(function(a){return a[0]});
   //['P','A','F']
 ```
+
+### Filter
+#### Metaphor: Make a new list of all the items in a grocery list that are vegetarian.
+
+*Returns array **B**, of equal or lesser length than array **A**, where each entry in B is an entry in A.*
+
+```javascript
+var foods = ['eggnog','fried chicken','figs','milk','egg whites'];
+  var eggFoods = foods.filter(function(a){return a.match('egg')});
+  //['eggnog','egg whites'];
+  
+  var shortFoods = foods.filter(function(a){return a.length < 5});
+  //['figs','milk'];
+```
+
