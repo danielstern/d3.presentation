@@ -187,3 +187,20 @@ var foods = ['milk duds','skim milk','buttermilk'];
 
 
 ```
+
+##Nests
+### The batarang of data manipulation
+#### Metaphor: Organizing a pack of cards by the face value, then organizing it by the suit, then by the color.
+
+A nest is like a function which processes an array of data into something much different. The same nest can be used to operate on many arrays - nests are not modified when they are used.
+
+```javascript
+
+var words = ["zim","zoo","fiz","bar","foo","qux"];
+var nest = d3.nest().key(function(a){return a[0]});
+var transformed = nest.entries(words); 
+// [{"key":"z","values":["zim","zoo"]},{"key":"f","values":["fiz","foo"]},{"key":"b","values":["bar"]},{"key":"q","values":["qux"]}]
+
+
+
+
