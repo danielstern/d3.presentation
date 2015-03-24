@@ -206,4 +206,20 @@ var transformed = nest.entries(words);
 
 `d3.select('body').selectAll('p').data(_.functions(d3)).enter().append('p').text(function(a){return a})`
 
+## Chartin' Stuff
+d3 has helper functions for most charts except for a straight up bar chart.
+
+pie is a good example, it works a lot like nest.
+
+d3 layouts are like stencils. using them does not modify the stencil.
+
+```javascript
+
+  var dataSet1 = [1,2,3,5,8];
+  var pieStencil = d3.layout.pie();
+  
+  var pie1 = pieStencil(dataSet1)
+```
+
+You need something called an `arc` to use a pie chart. don't ask me what it is.
 
