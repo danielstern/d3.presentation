@@ -5,9 +5,14 @@
 ### Contents
 
 - Introduction to D3
-  - History
-  - Mike Bostock & the New York Times
-  - The web's biggest open source library
+  - The history of D3 (Mike Bostock & the New York Times)
+  - The web's biggest open source library?
+  - What is D3?
+    - data manipulation
+    - color manipulation
+    - dom manipulation
+    - drawing visualizations
+    - drawing charts
 
 - Using D3
   - Selections and Data Joins
@@ -87,3 +92,118 @@ Check this out.
 - D3 uses SVG, HTML, CSS and JavaScript altogether like they were one big thing. Some of these individual languages are hard enough to understand on their own. 
 - D3 is often taught as a *charting* library even though that is by far its most high-level function
 - Mike Bostock is smarter than you. After five years of intensive study, you will be nearing the point he was when he first began.
+
+
+### Topics to Cover in a D3 Talk
+
+- Data Manipulation with JavaScript (no point in starting with D3 if you don't know the basics)
+  - Many to many: Map
+  - Many to few: Filter
+  - Many to *: Reduce
+  - Many to actions: forEach
+  - Many to boolean: Every
+  - Many to boolean: Some
+
+### Map
+#### Metaphor: Translating a grocery list into a different language.
+![image](https://cloud.githubusercontent.com/assets/4268152/6781796/a2d0cd20-d146-11e4-9bfc-ed9eb62d2535.png)
+*Creates a new array B from array A, where B has the same number of entries, which may not be the same*
+*Turns an array into a new array with the same length.*
+*'Maps stuff*
+
+Maps...
+- Always have the same number of entries as the original array
+- Invokes a function x times, where x is the length of the array
+- Doesn't modify the original array
+
+```javascript
+var fruits = ['Pear','Apple','Fig'];
+  var fruitLengths = fruits.map(function(a){return a.length});
+  //[4,5,3];
+
+  var fruitLetters = fruits.map(function(a){return a[0]});
+  //['P','A','F']
+```
+
+### Filter
+#### Metaphor: Make a new list of all the items in a grocery list that are vegetarian.
+
+*Returns array **B**, of equal or lesser length than array **A**, where each entry in B is an entry in A.*
+
+```javascript
+var foods = ['eggnog','fried chicken','figs','milk','egg whites'];
+  var eggFoods = foods.filter(function(a){return a.match('egg')});
+  //['eggnog','egg whites'];
+  
+  var shortFoods = foods.filter(function(a){return a.length < 5});
+  //['figs','milk'];
+```
+### Every
+#### Metaphor +: Checking to see if each item on a grocery list is purchased.
+
+```javascript
+var foods = ['milk duds','skim milk','buttermilk'];
+  var everythingIsMilk = foods.every(function(a){return a.match('milk')});
+  // true
+  
+  var everythingIsButter = foods.every(function(a){return a.match('butter')});
+  //false;
+```
+
+## Summarizing data
+***Summaries take a set (array) of data and turn into one datum (entry)***
+* similar to reduce *
+
+```javascript
+  var data = [19.8,49.6,188.5,222.9]
+  
+  d3.min(data)
+  // the lowest value among the data
+  //19.8
+  
+  d3.max(data)
+  // the highest value among the data
+  //222.9
+  
+  d3.mean(data)
+  // the mean value of the data
+  //120.19999999999999
+  
+  d3.median(data)
+  // the median value of the data
+  //119.05000000000001
+  
+  d3.extent(data)
+  // the maxium and minimum values
+  // [19.8, 222.9]
+  
+  d3.deviation(data);
+  // the standard deviation (for people smarter than me)
+  //100.46010816903062
+  
+  d3.variance(data)
+  // what does this even do? no one knows.
+  //10092.233333333334
+
+
+```
+
+##Nests
+### The batarang of data manipulation
+#### Metaphor: Organizing a pack of cards by the face value, then organizing it by the suit, then by the color.
+
+A nest is like a function which processes an array of data into something much different. The same nest can be used to operate on many arrays - nests are not modified when they are used.
+
+```javascript
+
+var words = ["zim","zoo","fiz","bar","foo","qux"];
+var nest = d3.nest().key(function(a){return a[0]});
+var transformed = nest.entries(words); 
+// [{"key":"z","values":["zim","zoo"]},{"key":"f","values":["fiz","foo"]},{"key":"b","values":["bar"]},{"key":"q","values":["qux"]}]
+
+
+##How about this one?
+
+`d3.select('body').selectAll('p').data(_.functions(d3)).enter().append('p').text(function(a){return a})`
+
+
