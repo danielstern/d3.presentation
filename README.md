@@ -91,7 +91,10 @@ Check this out.
 
 - D3 uses SVG, HTML, CSS and JavaScript altogether like they were one big thing. Some of these individual languages are hard enough to understand on their own. 
 - D3 is often taught as a *charting* library even though that is by far its most high-level function
-- Mike Bostock is smarter than you. After five years of intensive study, you will be nearing the point he was when he first began.
+- Mike Bostock is smarter than you. After five years of intensive study, you will be nearing the point he was when he first began
+- D3 was designed to be a highly powerful and performant library, trading simplicity for complexity in each case. 
+  - D3 works really fast because it tries to reuse dom elements whenever possible. unfortunately this makes working with the library much more complicated than it has to be.
+  - D3 lets you work with data itself, taking no opinionated stances on style or animation (well, not many.) this means you have high customization, but high complexity. many libraries like chartist, c3, nvd3, etc. attempt to abstract this complexity away. https://www.youtube.com/watch?v=_A_FdbTkp9c . In my opinion there has yet to be a good abstraction on top of d3. usually it's just less work to use the libary itself.
 
 
 ### Topics to Cover in a D3 Talk
